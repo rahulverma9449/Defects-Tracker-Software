@@ -1,0 +1,25 @@
+<!-- shows create project button on project page and create issue buton if the project is open -->
+<link rel="stylesheet" href="/assets/css/header.css">
+<nav class="navbar navbar-expand-sm bg-light">
+
+    <div class="container-fluid">
+        <a class="navbar-brand ms-4" href="/assets/css/header.css" style="font-weight:bolder
+    ;
+     
+        
+        "> </a>
+        <% if( title === "Project Page"){ %>
+            <%- include('_issue_form'); %>
+                <%
+    }else{ %>
+                    <%- include('_project_form'); %>
+                        <% } %>
+    </div>
+</nav>
+
+<h1 href="/assets/css/header.css" style="font-weight:bolder
+;
+color: rgb(5, 5, 239);
+text-align: center;
+    
+    ">Defects Tracker Software </h1>
